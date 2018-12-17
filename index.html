@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sedona - информационный сайт для туристов</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
@@ -21,30 +24,30 @@
 		<sections class="advantages">
 			<b>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</b>
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-			<ul>
-				<li class="advantige">
+			<ul class="advantages-list">
+				<li class="advantage">
 					<h3>- №1 -</h3>
 					<p><b>Настоящий городок</b></p>
 					<p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
 					<img src="img/photo1.jpg" alt="Городок Седона" class="advantige-photo">
 				</li>
-				<li class="advantige">
+				<li class="advantage">
 					<h3>- №2 -</h3>
 					<p><b>Там есть мост дьявола</b></p>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					<img src="img/photo2.jpg" alt="Мост дьявола">
 				</li>
-				<li class="advantige">
+				<li class="advantage">
 					<h3>- №3 -</h3>
 					<p><b>Небольшая площадь</b></p>
 					<p>Все достопримечательноси находятся очень близко</p>
 				</li>
-				<li class="advantige">
+				<li class="advantage">
 					<h3>- №4 -</h3>
 					<p><b>Красивая дорога</b></p>
 					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 				</li>
-				<li class="advantige">
+				<li class="advantage">
 					<h3>- №5 -</h3>
 					<p><b>Мало туристов</b></p>
 					<p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -53,16 +56,16 @@
 		</sections>
 		<section class="services">
 			<h2 class="visually-hidden">Наши услуги</h2>
-			<ul>
-				<li>
+			<ul class="services-list">
+				<li class="service">
 					<h3>Жилье</h3>
 					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</li>
-				<li>
+				<li class="service">
 					<h3>Еда</h3>
 					<p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
 				</li>
-				<li>
+				<li class="service">
 					<h3>Сувениры</h3>
 					<p>Не только китайского, но и местного производства!</p>
 				</li>
@@ -71,21 +74,38 @@
 		<section class="booking">
 			<h2 class="visually-hidden">Бронирование гостинницы в Седоне</h2>
 			<b>Заинтересовались?</b>
-			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-			<button class="button">Поиск гостинницы в Седоне</button>
-			<!-- Здесь будет форма -->
+			<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			<button class="button button-search">Поиск гостинницы в Седоне</button>
+			<form class="hotel-searching" action="https://echo.htmlacademy.ru" method="post">
+				<p>
+                	<label for="data-arrival">Дата заезда:</label>
+                	<input class="data-icon" id="date-arrival" type="text" name="data-arrival" placeholder="24 апреля 2017">
+            	</p>
+            	<p>
+                	<label for="data-departure">Дата выезда:</label>
+                	<input class="data-icon" id="data-departure" type="text" name="data-departure" placeholder="4 июля 2017">
+           		</p>
+           		<p>
+                	<label for="age-adults">Взрослые:</label>
+                	<input class="age-icon" id="age-adults" type="text" name="age-adults" placeholder="2">
+            	</p>
+            	<p>
+                	<label for="age-kids">Дети:</label>
+                	<input class="age-icon" id="age-kids" type="text" name="age-adults" placeholder="0">
+           		</p>
+           		 <button class="button button-find" type="submit">Найти</button>
+			</form>
 		</section>
 	</main>
 	<footer class="main-footer">
 		<p class="footer-visiting">
 			<a href="#">#visitsedona</a>
 		</p>
-		<div class="footer-social">
-			<ul>
-				<li><a class="social-button" href="#">Вконтакте</a></li>
-				<li><a class="social-button" href="#">Фейсбук</a></li>
-				<li><a class="social-button" href="#">Инстаграм</a></li>
-			</ul>
+		<ul class="footer-social">
+			<li><a class="social-button" href="#">Вконтакте</a></li>
+			<li><a class="social-button" href="#">Фейсбук</a></li>
+			<li><a class="social-button" href="#">Инстаграм</a></li>
+		</ul>
 		</div>
 		<p class="footer-copyright">
 			<b>Website by</b>
